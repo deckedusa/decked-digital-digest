@@ -1,0 +1,112 @@
+# Shopify Theme
+
+This is a running list of changes made to the [Shopify Theme](https://github.com/deckedusa/decked-shopify). This code base powers most of the decked.com funtionality.
+
+## v1.3.25 - CG 1500 Bug Fixes
+
+- Fixed issue where changing a product option value didn't correctly update dependent option values. This bug was exposed by the CG 75% no longer having a 1000lb payload option.
+- Added new meta event for Dealer Contact
+- Added DECKED brand styles to Viral Sweeps
+- Fixed issue where a small number of customers would see no product options or vehicle picker shown on product pages on initial page load.
+
+## v1.3.24 - Stories Launch
+
+**Bugs and Optimizations**
+- Fixed bug where the count of dealers was not displaying on dealer locator results
+- Optimized loading of vehicle picker data to improve PDP load time and resolve errors affecting a small subset of browsers
+
+**New Features**
+- Enhanced the Video section:
+    - Play action automatically expands to full screen for a more immersive experience
+    - Added support for full-bleed section to play videos directly within banners
+- Added section blend gradient to create smoother transitions from banners to secondary sections
+- Updated blog post listing styles
+- Added tracking for blog post types to give us better visibility into what type of content is most effective in brand storytelling on the website.
+
+## v1.3.23 - Design System
+
+**Optimization and Infrastructure**
+
+- Integrated the beginning of the *DECKED Component Library* to create a unified digital experience across all DECKED web platforms.
+- Restructured code optimization to improve site speed. (Introduced [webpack code splitting](https://webpack.js.org/guides/code-splitting/))
+- Optimized and centralized the evaluation of visibility rules used on product pages to display specific content based on vehicle information.
+
+**New Site Features**
+
+- Added sections and styles to support the new Stories page design.
+- A/B Test: Added a universal vehicle picker component to be used throughout the site (first test on Choose Your Vehicle page).
+- A/B Test: display individual options one at a time on product pages.
+- A/B Test: try different text styles on the "More Info" popup in product options.
+
+**Bug and Style Fixes**
+
+- Fixed an issue in Safari where the `+ Add` buttons in the customer view would appear blank.
+- Enhanced styles on the zoomed image carousel on PDP.
+- Fixed a bug where some images without links had a zoom effect on hover in the blog posts.
+- Adjusted the sizing of popups on tablets. 
+
+## v1.3.21 - 8ft Load Floor
+
+**Dealer Locator**
+
+- Improved Dealer Locator Auto-location experience and restarted testing on this feature
+- Fixed UTM tracking on Dealer Locator auto-location
+
+**Product Configuration**
+
+- Implemented the ability to change product templates based on bed length
+- Added ability to change product descriptions between Midsize, Full-Size, and 8ft templates
+- Added support for multiple Good/Better options based on bed length
+
+**UI/UX Improvements**
+
+- Fixed bug with badge colors
+- Fixed mobile overflow issue on D-co scrolling experience
+- Enhanced client-side bug reporting
+
+
+## v1.3.20 - Color Launch
+
+**Case and Color Selection**
+
+- Fixed bug where case color selection would not stay when you switched between cases
+- Fixed issue where the hover image on preselected color product listings was defaulting to Tan
+- Fixed minor formatting issues with color swatches on PLP
+
+**Mobile Dealer Locator** 
+
+- Removed the prompt to give location access for mobile Dealer Locator users (switched to IP-based auto-location)
+- Defaulted mobile Dealer Locator Search page to the Map display
+
+**Site Features** 
+
+- Added functionality to customize color/style of badging (support for red IFAK "+ First Aid" badge)
+- Finalized scrolling animation section and added to D-co PLP
+
+**Checkout Improvements**  
+
+- Added Tax Exempt callout on checkout (simple prompt to email CX)
+- Updated link colors and heading capitalization on checkout pages to align better with global styles
+
+
+## v1.3.18 - Colors Teaser
+
+- Added more advanced content overlay with controls to the Slide Show section.
+- Added some features and fixed bugs in the Featured Collection section.
+- Optimizations to the javascript bundling to increase site speed.
+- Hide the quantity selector when the Add to Cart button is in a Sold Out, Notify Me or Back in Stock state.
+- Option to show Klaviyo form to sign up and be notified of upcoming products.
+- Fixed issue where map would not display in DL in edge cases.
+
+
+## v1.3.17 - Color Fixes
+
+-  Multiple tasks related to D-co Colors have been completed
+    - Thumbnails for the selector now have the option to retain the default color. (This was confusing when different cases have different color availability.)
+    - Option to not show an info popup near product options
+    - Fixed bug where promo tile in the last position on the featured collection section was hidden.
+    - Added Color Name next to label on PDP options
+- Added `Appointment Scheduled`  Status to the freight tracking page for SAIA
+- Bug fixes have been implemented for the GAI/Stories banner on large screens.
+- The Dealer Locator Map issue where the map would sometimes default to Idaho even in other locations has been resolved.
+- A TypeError in the /products/drawers-midsize page has been addressed.

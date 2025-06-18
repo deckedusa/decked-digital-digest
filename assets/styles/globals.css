@@ -1,0 +1,33 @@
+@layer tailwind, nextra, shoelace, my-base;
+
+@import 'tailwindcss' layer(tailwind);
+@import 'nextra-theme-docs/style.css' layer(nextra);
+@import '@decked/decked-design-system/dist/themes/light.css' layer(shoelace);
+@import '@decked/decked-design-system/dist/themes/dark.css' layer(shoelace);
+@import '@decked/decked-design-system/dist/themes/typography.css' layer(shoelace);
+
+@theme{
+    --font-sans: 'decked-web', sans-serif;
+}
+
+@layer my-base {
+    :root {
+        --nextra-navbar-height: 80px;
+        --x-font-weight-semibold: 600;
+        --nextra-primary-hue: 186deg !important;
+    }
+}
+
+.nextra-navbar-blur{
+    background: var(--x-color-nextra-bg);
+}
+
+.nextra-breadcrumb{
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    color: var(--sl-color-neutral-1000) !important
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+# B2B Portal
+
+This is a list of updates made to the b2b portal, There are multiple repositories for the b2b portal that each have thier own versioning so we will list releases by date to give a business facing overview of the changes and what the busness impact is.
+
+## 25.04.06 - Acc Skid booking update
+- Enable automatic shipment booking of ACC SKID via TMS
+    - Dynamically calculate PCF, FreightClass and Freight Subclass for ACC SKID before sending the booking to TMS
+- The following Transaction Line fields were introduced to enter the dimensions for ACC SKID.
+    - Ship Length
+    - Ship Width
+    - Ship Height
+- Ensures all the dimensions(length, width, height, weight) are entered and the NMFC is available before attempting to book the shipment in TMS
+- Update bookings to include only LTL items of an order (allows for ACC skids to be booked without removing the ACC items on an order)
+- Updated B2B Portal to use Flat Table Rates for FedEx Ground and Home Delivery.
