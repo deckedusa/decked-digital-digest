@@ -1,0 +1,19 @@
+# Sandbox Refresh SOP
+
+Tasks to complete before and after Sandbox Refresh
+
+### Before
+- [x] Before SB refreshes, push as much tested dev work to prod *If not ready for prod, make sure it is documented/copied*
+- [x] Check Stratus Asana board for in Testing tickets *Notify them to copy work before we refresh*
+- [x] Check NS Customizations board for in Sandbox and in progress work
+- [x] Document integrations and b2b portal passwords/links etc
+- [x] Download list of employees from Sandbox (including roles and access)
+
+
+
+### After 
+
+- [ ] Inactivate or Change to Testing any Workflows with Email Actions (Invoicing, Dunning, Prepay) in Sandbox
+- [ ] decked_sys_sandbox@decked.com will need to be recreated for b2b portal
+- [ ] Review Saved Search (Admin - Saved Search Recipient Review) to locate Saved Searches with Email Actions (VMI, Product Alerts, Etc.) Turn off email alerts for these searches
+- [ ] Reset Access Tokens for SCN and set up connection https://dashboard.stripe.com/settings/apps/com.stripe.netsuite-connector 

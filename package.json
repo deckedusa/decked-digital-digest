@@ -17,6 +17,7 @@
     "@decked/decked-design-system": "^0.0.1",
     "@tailwindcss/postcss": "^4.1.10",
     "next": "^15.3.3",
+    "next-auth": "^4.24.11",
     "next-images": "^1.8.5",
     "nextra": "^4.2.17",
     "nextra-theme-docs": "^4.2.17",

@@ -1,0 +1,27 @@
+# Shopify Discounts
+
+Shopify discounts have traditionally been totaled in Celigo and added as a discount at the header level in NetSuite. This approach has created issues with refunds and tax calculations when orders are modified. We are transitioning to use Celigo's native integration that creates discount line items for line items with discounts in Shopify, while retaining a header-level discount for order-level discounts. This change will allow for proper tax and refund calculations.
+
+## Order Level Discounts
+
+As before, order-level discounts will be added to the header level of the NetSuite sales order. Percentage discounts will be calculated by Celigo and added as a fixed amount discount to the header level of the sales order ([Example 232501](https://admin.shopify.com/store/decked-test/orders/6293683699778)). This will still require attention if an item is removed or refunded, as the discount will not be automatically recalculated.
+
+![Order Level Discount Example](/assets/shopify-discounts_header.png)
+
+## Line Item Level Discounts
+
+Discounts applied at the line item level in Shopify will come in as discount line items in NetSuite. This line item will show up below the original line item and will be transferred to the split order when the order is split. This allows for proper tax and refund calculations without manual action ([Example 233481](https://admin.shopify.com/store/decked-test/orders/6303918817346)).
+
+![Line Item Discount Example](/assets/shopify-discounts_line-item.png)
+
+## Configurations
+
+### New Celigo Configuration
+
+![New Celigo Settings](/assets/shopify-discounts-new-settings.png)
+![New Celigo Flow Mapping](/assets/shopify-discounts-new-flow-config.png)
+
+### Original Celigo Configuration
+ 
+![Original Celigo Settings](/assets/shopify-discounts-og-settings.png)
+![Original Celigo Flow Mapping](/assets/shopify-discounts-og-flow-config.png)

@@ -1,0 +1,13 @@
+
+# Accessory Orders - Auto Generate Fulfillments
+
+We refactored accessory auto fulfillment to utilize a Map/Reduce script that runs every 15 mins to look for accessory orders that are ready to fulfill. It updates Dispatch Status to YES and then calls a Suitelet to generate the fulfillment. 
+
+**Scripts**:
+
+- Map / Reduce -[SG2x_MR_Create_Item_Fulfillments](https://4532811.app.netsuite.com/app/common/scripting/script.nl?id=4960&id=4960&whence=)
+- Suitelet - [SG_SL_Create_Item_Fulfillments](https://4532811.app.netsuite.com/app/common/scripting/script.nl?id=4961&id=4961&whence) 
+
+**Saved Search**: 
+
+- [SCRIPT - M/R - SG SOs Ready to Fulfill](https://4532811.app.netsuite.com/app/common/search/searchresults.nl?searchid=8010&whence=)

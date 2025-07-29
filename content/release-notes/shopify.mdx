@@ -2,6 +2,24 @@
 
 This is a running list of changes made to the [Shopify Theme](https://github.com/deckedusa/decked-shopify). This code base powers most of the decked.com funtionality.
 
+## v1.3.26 - Important Notes Update
+**Enhanced Order Tracking**
+- Added fallback tracking for all Shopify orders where carrier APIs were unavailable using the new Rocket TMS API
+- Implemented tracking for all NetSuite orders booked with Rocket
+- Orders can now be tracked using Order Number and Billing Zip Code
+
+**Product Experience Improvements**
+- Redesigned the Tech Specs section on product pages to better highlight compatibility and fitment information
+- Replaced blue "i" icons with inline text prompts (e.g., "How to Measure?") as part of More Info popup A/B testing
+
+**Content & Layout**
+- Cleaned up and redesigned the basic blog template for improved readability
+- A/B test implementation; moving the announcement bar to the black space at the top of the page (first phase of homepage improvements)
+
+**Performance & Tracking**
+- Enhanced error handling for YouTube full-screen functionality to prevent playback issues
+- Added vehicle details to heap tracking for better analytics
+
 ## v1.3.25 - CG 1500 Bug Fixes
 
 - Fixed issue where changing a product option value didn't correctly update dependent option values. This bug was exposed by the CG 75% no longer having a 1000lb payload option.
