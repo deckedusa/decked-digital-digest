@@ -1,9 +1,28 @@
 
+//import { auth } from "./auth";
+import { redirect } from "next/navigation";
+
+
 export async function middleware(req) {
   const { pathname } = req.nextUrl
+  // console.log("pathname", pathname, config.matcher);
+  // // test if path matches the config matcher
+  // if (config.matcher.some((matcher) => matcher.test(pathname))) {
+    
+  //   //const session = await auth();
+  //   //console.log("session", session);
+    
+  //   // if (!session) {
+  //   //   redirect('/signin');
+  //   //   return;
+  //   // }
 
-  console.log("pathname", pathname);
-  
+  // }else{
+  //   console.log("Must not Sign in", pathname);
+
+  // }
+
+  return;
 }
 
 export const config = {
